@@ -10,7 +10,7 @@ Bienvenidos a la capacitacion de Angular 2022, este archivo se ir a actualizacio
 ## Instalaciones
 
 1. Descargar e instalar  **Node Version Manager** tool
-* [NVM for Windows](https://pip.pypa.io/en/stable/) - Instalador 
+* [NVM for Windows](https://github.com/coreybutler/nvm-windows/releases) - Instalador 
 * [NVM for Mac/Linux](https://www.pensemosweb.com/instalar-nodejs-nvm-macos-linux-windows/) - Siga instrucciones
 
 2. Una vez instalado por favor abra una consola de comandos y ejecute los siguientes comandos
