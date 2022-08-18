@@ -1,0 +1,23 @@
+<div class="contenedor">
+  <h1 class="titulo">
+      Contador
+  </h1>
+  <div class="botones">
+      <button (click)="restar()">
+          - 1
+      </button>
+
+      <p id="resultado">
+          {{ texto }}
+      </p>
+
+      <button (click)="sumar()">
+          + 1
+      </button>
+  </div>
+  <div class="text" *ngIf="resultado > 10">
+    <p>
+      {{ resultado + ' es mayor a 10'}}
+    </p>
+  </div>
+</div>

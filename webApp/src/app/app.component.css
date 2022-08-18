@@ -1,0 +1,26 @@
+.botones {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    max-width: 480px;
+    margin: 0 auto;
+  }
+  
+  button {
+    border: 0;
+    border-radius: 50%;
+    font-size: 16px;
+    background-color: #3d5656;
+    width: 37px;
+    height: 40px;
+    padding: 6px;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .titulo {
+    text-align: center;
+    font-family: sans-serif;
+  }
+  
