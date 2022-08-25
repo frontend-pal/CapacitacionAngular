@@ -1,0 +1,47 @@
+<div class="main">
+  <h2>Pipe app en angular</h2>
+  <br>
+  <br>
+
+  <h1>Pipe simple</h1>
+  <p>{{ nombre | uppercase }} </p>
+
+  <h3>Pipe normal</h3>
+  <!-- <ul>
+    <li *ngFor="let char of characters">
+      <pre>
+        {{ char | json }}
+      </pre>
+    </li>
+  </ul> -->
+
+  <h3>Pip avanzado</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Estado</th>
+        <th>Foto</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let char of characters | filtro:currentPage">
+        <td> {{ char.id }}</td>
+        <td> {{ char.name }}</td>
+        <td> {{ char.status }}</td>
+        <td> {{ char.image }}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <button (click)="previousPage()">
+    atras
+  </button>
+
+  <button (click)="nextPage()">
+    Adelante
+  </button>
+
+</div>
