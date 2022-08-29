@@ -12,19 +12,19 @@
 <body>
     <header>
         <!-- la navegacion de la paghina -->
-        <nav>
+        <!-- <nav>
             <o>
                 <li>Inicio</li>
                 <li> Servicios </li>
                 <li> sobvre nosotros</li>
                 <li>Contacto</li>
             </o>
-        </nav>
+        </nav> -->
         <!-- fin de la navegacion de la paghina -->
     </header>
     <!-- el contenido del sitio    -->
     <main>
-        <h1>Bienvenidos a mi pagina web</h1>
+        <!-- <h1>Bienvenidos a mi pagina web</h1>
         <section>
             <h2>
                 noticias principales
@@ -67,7 +67,90 @@
                 <li>Contacto</li>
             </o>
         </nav>
-    </footer>
+    </footer> -->
+
+        <h1>Formularios</h1>
+
+        <form action="/urlenvio" method="post">
+            <fieldset>
+                <legend>Personal Personales</legend>
+                <p>
+                    <label for="tipodoc">Tipo Documento:</label>
+                    <select id="tipodoc">
+                        <option value="" selected>
+                            Seleccione su tipo documento
+                        </option>
+                        <option value="CC">
+                            Cédula de Ciudadanía
+                        </option>
+                        <option value="TI">
+                            Tarjeta de Identidad
+                        </option>
+                        <option value="PS">
+                            Pasaporte
+                        </option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="nombre">Nombre</label>
+                    <input id="nombre" type="text">
+                </p>
+
+                <p>
+                    <label for="apellido">Apellido(s):</label>
+                    <input id="apellido" type="text">
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Otros datos</legend>
+                <p>
+                    <label for="jobis">Escoja sus Hobbies</label> <br>
+                    <input type="checkbox" name="jobis" value="musica"> Música<br>
+                    <input type="checkbox" name="jobis" value="arte"> Arte<br>
+                    <input type="checkbox" name="jobis" value="peliculas"> Peliculas<br>
+                </p>
+                <p>
+                    <label for="edad">Elija su edad</label> <br>
+                    <input type="radio" name="edad"> 18 - 39 <br>
+                    <input type="radio" name="edad"> 40 - 50 <br>
+                    <input type="radio" name="edad"> 51 - 67 <br>
+
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <p>
+                    <label for="frase">Frase de motivacion</label> <br>
+                    <textarea name="frase" id="frase" cols="30"></textarea>
+                </p>
+
+            </fieldset>
+            
+            <fieldset>
+                <p>
+                    <label for="pass">Contraseña: </label> <br />
+                    <input type="password" id="pass">
+                </br>
+
+            </fieldset>
+            <p>                
+                <input type="hidden" value="98q4we64q66qwe" id="campoNo">
+            </p>
+
+            <p>
+                <button type="submit">
+                    Enviar
+                </button>
+                <button type="reset">
+                    Reset
+                </button>
+            </p>
+        </form>
+
+        <hr />
+        <img src="https://i.pinimg.com/originals/f0/01/cc/f001cc0a0ebc16aa418d9b133582566e.jpg" alt="Rick & morty" />
 </body>
 
 </html>
