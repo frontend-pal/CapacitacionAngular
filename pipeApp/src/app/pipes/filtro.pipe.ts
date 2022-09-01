@@ -6,7 +6,12 @@ import { Result } from '../services/charResponse';
 })
 export class FiltroPipe implements PipeTransform {
 
-  transform(value: Result[], page = 0): Result[] {
+  transform(value: Result[], page = 0, search: string): Result[] {
+    
+    if (search !== '') {
+      console.log(search);
+      return value.filter(x => x.name.toLowerCase().startsWith(search));
+    }
     return value.slice(page, page + 2);
   }
 

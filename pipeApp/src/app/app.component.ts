@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ComponentFactoryResolver, OnInit } from '@angular/core';
 import { RickNmortyService } from './services/rick-nmorty.service';
 
 @Component({
@@ -9,6 +9,7 @@ import { RickNmortyService } from './services/rick-nmorty.service';
 export class AppComponent implements OnInit {
   title = 'pipeApp';
   characters: any[] = [];
+  search: string = '';
   // nombre = 'soy un texto para un pipe';
   nombre = 1;
   currentPage = 0;
@@ -40,5 +41,10 @@ export class AppComponent implements OnInit {
       this.currentPage -= 2;
       console.log(this.currentPage);
     }
+  }
+
+  onSearch(strBusqueda: string) {
+    this.search = strBusqueda;
+    
   }
 }

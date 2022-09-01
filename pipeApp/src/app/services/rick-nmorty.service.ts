@@ -10,7 +10,6 @@ export class RickNmortyService {
   response: any = JSON.parse(CHARACTERS);
   constructor() { }
 
-
   getAllCharacters(): Observable<CharResponse> {
     return new Observable((obs) => {
       setTimeout(() => {
